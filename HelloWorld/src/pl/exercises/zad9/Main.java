@@ -1,15 +1,15 @@
-package pl.exercises.excercisenine;
+package pl.exercises.zad9;
 
 import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        ExerciseNine exerciseNine = new ExerciseNine();
+        Zad9 zad9 = new Zad9();
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Wpisz liczbę: ");
         int newNumber = scanner.nextInt();
-        exerciseNine.drawWave(newNumber);
+        zad9.initWave(newNumber);
 
     }
 }
