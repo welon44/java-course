@@ -1,19 +1,22 @@
 package pl.exercises.zad15;
 
-import java.util.Objects;
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.HashSet;
 
 public class Zad15 {
 
-    Integer[] intArray = new Integer[]{ 1, 2, 3, 4, 1, 2, 3, 4, 1 };
+    ArrayList<Integer> arr = new ArrayList<>(Arrays.asList(1, 2, 3, 4, 45, 55, 3, 32, 22, 22, 55, 1, 1));
 
     void printDuplicatesNumbers() {
-        for (int i = 0; i < intArray.length; i++) {
-            for (int j = i + i; j < intArray.length; j++) {
-                if (j != i && Objects.equals(intArray[j], intArray[i])) {
-                    System.out.println(intArray[i]);
-                }
+        HashSet<Integer> hCheckSet = new HashSet<>();
+        HashSet<Integer> hTargetSet = new HashSet<>();
+        for (Integer integer : arr) {
+            if(!hCheckSet.add(integer)) {
+                hTargetSet.add(integer);
             }
         }
+        System.out.println("Duplikaty to " + hTargetSet);
     }
 
 }
