@@ -12,6 +12,5 @@ public class Main {
         String newText = scanner.nextLine();
 
         zad13.extractWords(newText);
-
     }
 }

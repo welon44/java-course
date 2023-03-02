@@ -9,6 +9,5 @@ public class Zad13 {
             String stringToRepeat = array[i] + " ";
             System.out.print(stringToRepeat.repeat(2));
         }
-
     }
 }
