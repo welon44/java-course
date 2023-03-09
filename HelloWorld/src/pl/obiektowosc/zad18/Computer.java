@@ -1,4 +1,4 @@
-package pl.abstraction.zad18;
+package pl.obiektowosc.zad18;
 
 import java.util.Objects;
 

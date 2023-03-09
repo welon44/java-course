@@ -1,8 +1,9 @@
-package pl.abstraction.zad21;
+package pl.obiektowosc.zad21;
 
 public class Cone extends ThreeDeeShape {
     private int radius;
     private int h;
+    private double l;
 
     Cone(int radius, int h) {
         this.radius = radius;
@@ -10,7 +11,7 @@ public class Cone extends ThreeDeeShape {
     }
     @Override
     public double calculateVolume() {
-        return (double) getRadius() * getH() / 3;
+        return (double) Math.PI * Math.pow(radius, 2) / 3;
     }
 
     @Override
@@ -20,7 +21,8 @@ public class Cone extends ThreeDeeShape {
 
     @Override
     public double calculateArea() {
-        return 0;
+        setL(Math.sqrt(Math.pow(radius, 2) + Math.pow(h, 2)));
+        return Math.PI * radius * getL();
     }
 
     public int getRadius() {
@@ -29,5 +31,13 @@ public class Cone extends ThreeDeeShape {
 
     public int getH() {
         return h;
+    }
+
+    public void setL(double l) {
+        this.l = l;
+    }
+
+    public double getL() {
+        return l;
     }
 }

@@ -1,4 +1,4 @@
-package pl.abstraction.zad21;
+package pl.obiektowosc.zad21;
 
 public class Cube extends ThreeDeeShape {
 
@@ -26,4 +26,5 @@ public class Cube extends ThreeDeeShape {
     public double calculateArea() {
         return 6 * Math.pow(getA(), 2);
     }
+
 }

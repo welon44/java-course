@@ -1,6 +1,6 @@
-package pl.abstraction.zad18;
+package pl.obiektowosc.zad18;
 
-import pl.abstraction.zad19.Laptop;
+import pl.obiektowosc.zad19.Laptop;
 
 public class Main {
     public static void main(String[] args) {

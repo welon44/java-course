@@ -1,7 +1,7 @@
-package pl.abstraction.zad19;
+package pl.obiektowosc.zad19;
 
 import java.util.Objects;
-import pl.abstraction.zad18.Computer;
+import pl.obiektowosc.zad18.Computer;
 
 public class Laptop extends Computer {
 

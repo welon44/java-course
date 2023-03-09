@@ -1,4 +1,4 @@
-package pl.abstraction.zad20;
+package pl.obiektowosc.zad20;
 
 public class Main {
 
