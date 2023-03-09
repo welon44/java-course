@@ -2,8 +2,9 @@ package pl.obiektowosc.zad9;
 
 import pl.obiektowosc.zad10.MoveDirection;
 import pl.obiektowosc.zad10.Moveable;
+import pl.obiektowosc.zad11.Resizable;
 
-public class Circle implements Moveable {
+public class Circle implements Moveable, Resizable {
 
     private Point2D center;
     private Point2D point;
@@ -53,5 +54,14 @@ public class Circle implements Moveable {
                 "center=" + center +
                 ", point=" + point +
                 '}';
+    }
+
+    @Override
+    public void resize(double resizeFactor) {
+        double resizedPointX = center.getX() + ((point.getX() - center.getX()) * resizeFactor);
+        double resizedPointY = center.getY() + ((point.getY() - center.getY()) * resizeFactor);
+
+        point.setX(resizedPointX);
+        point.setY(resizedPointY);
     }
 }

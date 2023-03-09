@@ -15,6 +15,8 @@ public class Main {
         System.out.println("Obwód: " + circle1.calculateCircumference());
         System.out.println("Pole: " + circle1.calculateArea());
 
+        System.out.println("PUNKTY: " + circle1);
+
         circle1.move(new MoveDirection(2, 2));
 
         System.out.println("Nowy promień: " + circle1.calculateRadius());
@@ -22,5 +24,13 @@ public class Main {
         System.out.println("Nowe pole: " + circle1.calculateArea());
 
         System.out.println("NOWE PUNKTY: " + circle1);
+
+        circle1.resize(2d);
+
+        System.out.println("NOWE PUNKTY PO RESIZE: " + circle1);
+        System.out.println("Nowy promień po resize: " + circle1.calculateRadius());
+        System.out.println("Nowy obwód po resize: " + circle1.calculateCircumference());
+        System.out.println("Nowe pole po resize: " + circle1.calculateArea());
+
     }
 }
