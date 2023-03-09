@@ -1,4 +1,4 @@
-package pl.obiektowosc.zad16;
+package pl.exercises.zad16;
 
 public class Main {
     public static void main(String[] args) {
