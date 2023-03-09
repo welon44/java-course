@@ -1,6 +1,9 @@
 package pl.obiektowosc.zad9;
 
-public class Circle {
+import pl.obiektowosc.zad10.MoveDirection;
+import pl.obiektowosc.zad10.Moveable;
+
+public class Circle implements Moveable {
 
     private Point2D center;
     private Point2D point;
@@ -36,5 +39,19 @@ public class Circle {
 
     public void setPoint(Point2D point) {
         this.point = point;
+    }
+
+    @Override
+    public void move(MoveDirection moveDirection) {
+        center.move(moveDirection);
+        point.move(moveDirection);
+    }
+
+    @Override
+    public String toString() {
+        return "Circle{" +
+                "center=" + center +
+                ", point=" + point +
+                '}';
     }
 }

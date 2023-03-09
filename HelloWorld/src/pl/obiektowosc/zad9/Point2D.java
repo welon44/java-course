@@ -1,6 +1,9 @@
 package pl.obiektowosc.zad9;
 
-public class Point2D {
+import pl.obiektowosc.zad10.MoveDirection;
+import pl.obiektowosc.zad10.Moveable;
+
+public class Point2D implements Moveable {
     private double x;
     private double y;
 
@@ -23,5 +26,19 @@ public class Point2D {
 
     public void setY(double y) {
         this.y = y;
+    }
+
+    @Override
+    public void move(MoveDirection moveDirection) {
+        setX(getX() + moveDirection.getX());
+        setY(getY() + moveDirection.getY());
+    }
+
+    @Override
+    public String toString() {
+        return "Point2D{" +
+                "x=" + x +
+                ", y=" + y +
+                '}';
     }
 }
