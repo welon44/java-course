@@ -18,15 +18,15 @@ public enum Car {
         this.power = power;
     }
 
-    boolean isFasterThan(Car car) {
+    public boolean isFasterThan(Car car) {
         return this.power > car.power;
     }
 
-    boolean isRegular() {
+    public boolean isRegular() {
         return !isPremium();
     }
 
-    boolean isPremium() {
+    public boolean isPremium() {
         return this.prize > 5000;
     }
 

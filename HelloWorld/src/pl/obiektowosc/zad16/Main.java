@@ -1,4 +1,6 @@
-package pl.exercises.zad16;
+package pl.obiektowosc.zad16;
+
+import pl.exercises.zad16.Runner;
 
 public class Main {
     public static void main(String[] args) {

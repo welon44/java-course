@@ -22,7 +22,7 @@ public enum Runner {
         return maxTime;
     }
 
-    static Runner getFitnessLevel(int time) {
+    public static Runner getFitnessLevel(int time) {
         Runner runnerLevel = null;
 
         for(Runner runner : Runner.values()) {

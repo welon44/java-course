@@ -1,6 +1,6 @@
-package pl.exercises.zad9;
+package pl.exercises.zad9basic;
 
-public class Zad9 {
+public class Zad9Basic {
 
     void initWave(int waveLength) {
         int waveHeight = 4;

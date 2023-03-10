@@ -1,4 +1,6 @@
-package pl.exercises.zad15;
+package pl.obiektowosc.zad15;
+
+import pl.exercises.zad15.Car;
 
 public class Main {
     public static void main(String[] args) {

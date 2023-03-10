@@ -1,4 +1,4 @@
-package pl.exercises.zad9;
+package pl.exercises.zad9basic;
 
 import pl.exercises.zad10.MoveDirection;
 import pl.exercises.zad10.Moveable;

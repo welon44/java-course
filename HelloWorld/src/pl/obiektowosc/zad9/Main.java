@@ -1,4 +1,4 @@
-package pl.exercises.zad9;
+package pl.exercises.zad9basic;
 //https://journey.study/v2/learn/courses/7203/modules/20602/units/9/materials/28013
 
 import pl.exercises.zad10.MoveDirection;
