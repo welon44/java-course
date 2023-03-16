@@ -11,6 +11,7 @@ public class StaticExample {
         return number;
     }
 
+    //wykonuje sie na poczatku
     static {
         number = 100;
     }
