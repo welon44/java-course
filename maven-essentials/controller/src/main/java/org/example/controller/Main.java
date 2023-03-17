@@ -6,9 +6,11 @@ public class Main {
 
         BikeController bikeController = new BikeController();
 
-        bikeController.removeBikeById(1);
-        System.out.println("==============================");
-        System.out.println(bikeController.getAllBikes());
+//        bikeController.removeBikeById(1);
+//        System.out.println("==============================");
+//        System.out.println(bikeController.getAllBikes());
+
+        bikeController.findBikeByBrand("Kuota");
 
     }
 }

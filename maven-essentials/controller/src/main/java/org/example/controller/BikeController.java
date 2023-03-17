@@ -2,29 +2,29 @@ package org.example.controller;
 
 import java.util.List;
 import org.example.domain.Bike;
-import org.example.service.BikeRepositoryService;
+import org.example.service.BikeService;
 
 public class BikeController {
 
-    private final BikeRepositoryService bikeRepositoryService = new BikeRepositoryService();
+    private final BikeService bikeService = new BikeService();
 
     public List<Bike> getAllBikes() {
-        return bikeRepositoryService.getAllBikes();
+        return bikeService.getAllBikes();
     }
 
     public void addBike(Bike bike) {
-        bikeRepositoryService.addBike(bike);
+        bikeService.addBike(bike);
     }
 
     public void removeBikeById(int id) {
-        bikeRepositoryService.removeBikeById(id);
+        bikeService.removeBikeById(id);
     }
 
     public List<Bike> findBikeByBrand(String brand) {
-        return bikeRepositoryService.findBikeByBrand(brand);
+        return bikeService.findBikeByBrand(brand);
     }
 
     public List<Bike> findBikeByModel(String model) {
-        return bikeRepositoryService.findBikeByModel(model);
+        return bikeService.findBikeByModel(model);
     }
 }

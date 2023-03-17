@@ -1,10 +1,12 @@
 package org.example.service;
 
 import java.util.List;
+import lombok.extern.log4j.Log4j2;
 import org.example.domain.Bike;
 import org.example.repository.BikeRepository;
 
-public class BikeRepositoryService {
+@Log4j2
+public class BikeService {
 
     private BikeRepository bikeRepository = new BikeRepository();
 
@@ -21,6 +23,7 @@ public class BikeRepositoryService {
     }
 
     public List<Bike> findBikeByBrand(String brand) {
+
         return bikeRepository.findBikeByBrand(brand);
     }
 
