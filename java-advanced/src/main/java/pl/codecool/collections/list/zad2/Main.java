@@ -31,19 +31,20 @@ public class Main {
         bookService.addBook(book2);
         bookService.addBook(book3);
 
-        System.out.println("Wszystkie książki: " + bookService.getAllBooks());
-        System.out.println("===========================");
-        System.out.println("Książki wydane przed 1999: " + bookService.getAllBooksReleasedBefore(1999));
-        System.out.println("===========================");
-        System.out.println("Najdroższa książka to: " + bookService.getMostExpensiveBook());
-        System.out.println("===========================");
-        System.out.println("Najtańsza książka to: " + bookService.getMostCheapestBook());
-        System.out.println("===========================");
-        System.out.println("Książka z conajmniej 3 autorami: " + bookService.getBooksWithAtLeastThreeAuthors());
-        System.out.println("===========================");
-        System.out.println("Wyszukaj książkę: " + bookService.searchBooks(book3));
-        System.out.println("===========================");
-        System.out.println("Wyszukaj książkę po autorze: " + bookService.searchBooksByAuthor(author1));
+//        System.out.println("Wszystkie książki: " + bookService.getAllBooks());
+//        System.out.println("===========================");
+//        System.out.println("Książki wydane przed 1999: " + bookService.getAllBooksReleasedBefore(1999));
+//        System.out.println("===========================");
+//        System.out.println("Najdroższa książka to: " + bookService.getMostExpensiveBook());
+//        System.out.println("===========================");
+//        System.out.println("Najtańsza książka to: " + bookService.getMostCheapestBook());
+//        System.out.println("===========================");
+//        System.out.println("Książka z conajmniej 3 autorami: " + bookService.getBooksWithAtLeastThreeAuthors());
+//        System.out.println("===========================");
+//        System.out.println("Wyszukaj książkę: " + bookService.searchBooks(book3));
+//        System.out.println("===========================");
+//        System.out.println("Wyszukaj książkę po autorze: " + bookService.searchBooksByAuthor(author1));
 
+        System.out.println(bookService.sortBooksByPrice());
     }
 }

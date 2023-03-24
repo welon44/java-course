@@ -2,6 +2,8 @@ package pl.codecool.collections.list.zad2;
 
 import java.util.ArrayList;
 import java.util.Comparator;
+import java.util.Deque;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -52,6 +54,20 @@ public class BookService {
         return booksList.stream().filter(book -> book.getAuthors().contains(searchedAuthor)).collect(Collectors.toList());
     }
 
+    Deque<Book> sortBooksByPrice() {
 
+        List<Book> copy = new ArrayList<>(booksList);
+
+        Comparator<Book> comparator = new Comparator<Book>() {
+            @Override
+            public int compare(Book b1, Book b2) {
+                return Double.compare(b1.getPrice(), b2.getPrice());
+            }
+        };
+
+        copy.sort(comparator);
+
+        return new LinkedList<>(copy);
+    }
 
 }
