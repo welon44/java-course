@@ -1,4 +1,4 @@
-package pl.codecool.collections.set.setzad1;
+package pl.codecool.collections.set.duplicates;
 
 import java.util.HashSet;
 import java.util.List;

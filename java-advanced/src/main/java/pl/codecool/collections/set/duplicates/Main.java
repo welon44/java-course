@@ -1,4 +1,4 @@
-package pl.codecool.collections.set.setzad1;
+package pl.codecool.collections.set.duplicates;
 
 import java.util.ArrayList;
 import java.util.List;
