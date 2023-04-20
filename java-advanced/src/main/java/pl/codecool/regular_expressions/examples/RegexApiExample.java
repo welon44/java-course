@@ -8,7 +8,7 @@ public class RegexApiExample {
     public static void main(String[] args) {
 
         Pattern pattern = Pattern.compile("[abc]");
-        Matcher matcher = pattern.matcher("aa xyz a");
+        Matcher matcher = pattern.matcher("abc");
 
         System.out.println("matches " + matcher.matches());
 
