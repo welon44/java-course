@@ -1,4 +1,4 @@
-package pl.codecool.lambda_stream.lambda.method_reference;
+package pl.codecool.lambda_stream.method_reference;
 
 public class StringUtils {
 
